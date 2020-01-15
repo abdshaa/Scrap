@@ -1,0 +1,13 @@
+<div>
+    <h1 class="card center-align">News</h1>
+</div>
+<div class="row">
+    <div class="col s3"></div>
+    <div class="col s8 left-align">
+        {{#each article}}
+        <div class="card-body">
+            <a target="blank" class="card-title" href={{link}}>{{title}}</a>
+            <p data-toggle="modal" data-targer="#notesModal" class="card-text" data-id="id"></p>
+        </div>
+        {{/each}}
+    </div>
